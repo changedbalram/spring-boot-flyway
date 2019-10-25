@@ -9,4 +9,5 @@ insert into boyfriend (short_name, contact_name, contact_number) values
   ('Tiffin', 'Rushi',  '123564879'),
   ('CreditCard', 'Mahi',  '65985623'),
   ('Lunch', 'Arora',  '2325689565'),
-  ('Dinner', 'Sashi',  '784549454');
+  ('Dinner', 'Sashi',  '784549454'),
+  ('TimePass', 'Ekveer',  '874545812');
