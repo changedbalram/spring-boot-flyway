@@ -4,8 +4,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="Boy_Friend")
 public class BoyFriend{
 	
     @Id
@@ -13,8 +17,10 @@ public class BoyFriend{
     private Long id;
 
     private String shortName;
-    private String contactName;
-    private String contactNumber;
+    
+    @ManyToOne
+    @JoinColumn(name="boyFriendId")
+    private GirlFriend girlFriend;
 
     public Long getId() {
         return id;
@@ -28,20 +34,13 @@ public class BoyFriend{
 		this.shortName = shortName;
 	}
 
-	public String getContactName() {
-		return contactName;
+	public GirlFriend getGirlFriends() {
+		return girlFriend;
 	}
 
-	public void setContactName(String contactName) {
-		this.contactName = contactName;
+	public void setGirlFriend(GirlFriend girlFriend) {
+		this.girlFriend = girlFriend;
 	}
-
-	public String getContactNumber() {
-		return contactNumber;
-	}
-
-	public void setContactNumber(String contactNumber) {
-		this.contactNumber = contactNumber;
-	}
-
+	
+	
 }
