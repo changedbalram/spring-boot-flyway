@@ -18,7 +18,6 @@ import javax.persistence.Table;
  * @description:
  */
 @Entity
-@Table(name="Girl_Friend")
 public class GirlFriend {
 	
 	@Id

@@ -14,8 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class BoyFriendController {
 
-    @Autowired
-    private BoyFriendRepository boyFriendRepository;
+    @Autowired private BoyFriendRepository boyFriendRepository;
 
     /**
      * <h1> It will print all boyfriends list </h1>
