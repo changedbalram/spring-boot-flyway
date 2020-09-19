@@ -8,8 +8,8 @@ create table girlfriend (
     references boyfriend (id)
 );
 
-insert into girlfriend (boyfriend_id,short_name, contact_name, contact_number)
-	select  id,short_name,contact_name,contact_number from boyfriend;
+insert into girlfriend (boyfriend_id, short_name, contact_name, contact_number)
+						select  id,short_name,contact_name,contact_number from boyfriend;
 
 alter table boyfriend drop column contact_name;
 alter table boyfriend drop column contact_number;

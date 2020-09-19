@@ -1,6 +1,8 @@
-package com.ancylabz;
+package com.balram.repo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.balram.domain.BoyFriend;
 
 /**
  * @className:com.ancylabz.BoyFriendRepository.java
