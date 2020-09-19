@@ -1,5 +1,5 @@
 create table boyfriend (
-  id int identity primary key,
+  boy_id int identity primary key,
   short_name varchar(20) not null,
   contact_name varchar (50) not null,
   contact_number varchar (20) not null

@@ -12,16 +12,16 @@ public class BoyFriend{
 	
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long boy_id;
 
     private String shortName;
     
     @ManyToOne
-    @JoinColumn(name="boyFriendId")
+    @JoinColumn(name="girl_id")
     private GirlFriend girlFriend;
 
     public Long getId() {
-        return id;
+        return boy_id;
     }
 
 	public String getShortName() {

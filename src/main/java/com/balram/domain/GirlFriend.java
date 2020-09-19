@@ -21,9 +21,9 @@ public class GirlFriend {
 	
 	@Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-    private Long boyFriendId;
+    private Long girl_id;
 	
-	@OneToMany(mappedBy = "girlFriend")
+	@OneToMany
 	private List<BoyFriend> boyFriend;
 
     private String shortName;
@@ -31,7 +31,7 @@ public class GirlFriend {
     private String contactNumber;
 
     public Long getId() {
-        return boyFriendId;
+        return girl_id;
     }
 
 	public String getShortName() {
